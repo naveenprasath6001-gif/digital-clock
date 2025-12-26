@@ -1,0 +1,34 @@
+body {
+    margin: 0;
+    height: 100vh;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Orbitron', monospace;
+}
+
+.clock {
+    font-size: 12rem;
+    font-weight: 900;
+    color: #fff;
+    text-shadow: 0 0 20px rgba(255,255,255,0.8);
+    letter-spacing: 0.3rem;
+    padding: 2rem;
+    border: 3px solid rgba(255,255,255,0.3);
+    border-radius: 20px;
+    background: rgba(0,0,0,0.2);
+    backdrop-filter: blur(10px);
+    min-width: 600px;
+    text-align: center;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+}
+
+@media (max-width: 768px) {
+    .clock {
+        font-size: 6rem;
+        min-width: 300px;
+        letter-spacing: 0.1rem;
+        padding: 1rem;
+    }
+}
